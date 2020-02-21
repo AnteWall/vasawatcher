@@ -1,0 +1,25 @@
+{
+  "name": "vasa-watcher",
+  "version": "1.0.0",
+  "description": "Post slack Messages when Followed people have updated splits",
+  "main": "scheduled-work.ts",
+  "license": "MIT",
+  "scripts": {
+    "force": "FORCE_SEND=true ts-node scheduled-worker.ts",
+    "start": "ts-node scheduled-worker.ts"
+  },
+  "dependencies": {
+    "@slack/events-api": "^2.3.1",
+    "@slack/web-api": "^5.7.0",
+    "dotenv": "8.2.0",
+    "mongoose": "5.9.1",
+    "node-fetch": "2.6.0",
+    "node-html-parser": "1.2.6",
+    "ts-node": "8.6.2",
+    "typescript": "3.8.2"
+  },
+  "devDependencies": {
+    "@types/mongoose": "5.7.1",
+    "@types/node-fetch": "2.5.4"
+  }
+}
